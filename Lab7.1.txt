@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+double functionM(void);
+int functionN(int n, double x);
+double functionO(double, int, double, int);
+double functionP(int a, int n, int b, int c);
+ 
+int main(void) {
+  	int a, b, c, d, e;
+  	double r, s, t, u, v;
+  	//function calling (a-k)
+}
+
+
+//จากการเรียกใช้ฟังก์ชัน มีความผิดพลาดที่จุดใดหรือไม่? จงอธิบาย
+------------------------------------------------------------------------------
+a)  functionM(); ถูก ไม่รับค่าและ return ค่า
+b)  a = functionM(); ผิด a เป็น int ชนิดไม่ตรงกับ functionM ที่เป็น double
+c)  b = functionN(a, b); ถูก ค่า b ที่ส่งเข้าไปเป็น int จะถูกแปลงเป็น double
+d)  r = functionO(r,a,s,b); ถูก ชนิดข้อมูลถูก
+e)  s = functionP(a,b,c,d,e); ผิด ตัวแปรที่ส่งเข้าฟังชั่นเกินที่ฟังชั่นจะรับ
+f)  u = functionM(); ถูก ไม่รับค่าและ return ค่า
+g)  c = d + functionN(r,s); ผิด r ที่ส่งเข้าไปเป็น double แต่ฟังชั่นรับ int
+h)  t = s * functionO(r, a, r, a); ถูก ชนิดข้อมูลถูก
+i)  a = v + functionP(r, s, t, t); ผิด r s t t ที่ส่งเข้าไปจะเป็น double แต่ฟังชั่นรับ int
+j)  functionP(functionN(a, a), s, t, t+r); ผิด functionN พารามิเตอร์ที่ 2 รับเป็น double แต่ส่ง int ไป และ functionP พารามิเตอร์ที่ 2 3 4 รับ int แต่ส่ง double ไป
+k)  v = functionP(functionN(a, a), s, t, t+r); ผิด functionN พารามิเตอร์ที่ 2 รับเป็น double แต่ส่ง int ไป และ functionP พารามิเตอร์ที่ 2 3 4 รับ int แต่ส่ง double ไป
+
+
+
